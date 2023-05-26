@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" MemoryProfiler="Unity.MemoryProfiler.Editor" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="container" style="align-items: flex-start; justify-content: flex-start; height: 531px;">
+        <ui:ScrollView name="algorithmContainer" style="height: 18px; width: -61px; align-items: flex-start;" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="btn1" />
+        <ui:ScrollView name="sceneContainer" style="height: 226px; width: 530px;" />
+    </ui:VisualElement>
+</ui:UXML>

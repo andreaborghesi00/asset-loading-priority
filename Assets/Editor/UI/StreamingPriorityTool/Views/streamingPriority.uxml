@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="mainContainer" style="justify-content: flex-start; margin-top: 10px; margin-bottom: 10px; align-items: stretch; margin-left: 10px; margin-right: 10px; height: 976px;">
+        <ui:VisualElement name="sceneSelectionContainer" style="margin-top: 10px;">
+            <ui:Label text="Scenes" display-tooltip-when-elided="true" />
+            <ui:TextField picking-mode="Ignore" text="Streaming" name="searchScene" style="width: 300px;" />
+            <ui:Button text="search" display-tooltip-when-elided="true" name="searchSceneBtn" style="height: 32px; width: 68px;" />
+            <ui:ScrollView name="sceneScrollView" style="height: auto; max-height: 250px; align-items: flex-start; justify-content: center; width: auto;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="entryPointSelectionContainer" style="margin-top: 10px;">
+            <ui:Label text="Entry point" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+        <ui:VisualElement name="frustumDetailsContainer" style="margin-left: 0; margin-right: 0; margin-top: 10px; margin-bottom: 0;" />
+        <ui:VisualElement name="algorithmContainer">
+            <ui:Label text="Sorting algorithm" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+        <ui:VisualElement name="exceptionAssetsContainer" style="height: 690px;">
+            <ui:Label text="Exceptions" display-tooltip-when-elided="true" name="assetExceptionlbl" />
+            <ui:VisualElement name="exceptionAssetsSearchContainer" style="height: 77px;">
+                <ui:TextField picking-mode="Ignore" value="filler text" text="search asset" usage-hints="None" name="exceptionAssetsSearchTf" />
+                <ui:Button text="search" display-tooltip-when-elided="true" name="exceptionAssetsSearchBtn" style="height: 27px; width: 71px;" />
+            </ui:VisualElement>
+            <ui:ListView focusable="true" name="exceptionAssetslv" show-border="false" selection-type="Multiple" style="height: 302px; width: 517px;" />
+            <ui:Button text="Select exceptions" display-tooltip-when-elided="true" name="exceptionAssetsBtn" style="height: 32px;" />
+            <ui:VisualElement name="exceptedContainer" style="height: 288px;">
+                <ui:Label text="Excepted" display-tooltip-when-elided="true" />
+                <ui:ScrollView name="exceptedAssetsSl" focusable="true" />
+                <ui:Button text="Clear Exceptions" display-tooltip-when-elided="true" name="exceptedAssetsRemoveBtn" style="height: 31px; -unity-text-align: middle-center;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button text="Sort" display-tooltip-when-elided="true" name="sortBtn" style="padding-top: 1px; margin-top: 15px; height: 45px;" />
+        <ui:Button text="Paint gray" display-tooltip-when-elided="true" name="paintBtn" style="height: 42px;" />
+    </ui:VisualElement>
+</ui:UXML>
